@@ -7,14 +7,11 @@ function getRandomClass() {
     var className;
     
     switch (true) {
-      case (randomNumber < 0.25):
+      case (randomNumber < 0.50):
         className = "offcanvas-start";
         break;
-      case (randomNumber < 0.5):
+      case (randomNumber > 0.5):
         className = "offcanvas-end";
-        break;
-      case (randomNumber < 0.75):
-        className = "offcanvas-top";
         break;
       default:
         className = "offcanvas-start";
