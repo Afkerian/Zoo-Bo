@@ -1,0 +1,71 @@
+#logo{
+    display: block;
+    float: left;
+    margin-left: 10px;
+    animation-name: rotar-logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/*animacion balon*/
+@keyframes rotar-logo{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@-webkit-keyframes animborder {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    100% {
+        -webkit-transform: translateX(113px);
+        transform: translateX(113px);
+    }
+}
+
+@keyframes animborder {
+    0% {
+        -webkit-transform: translateX(0px);
+        transform: translateX(0px);
+    }
+
+    100% {
+        -webkit-transform: translateX(113px);
+        transform: translateX(113px);
+    }
+}
+
+
+@keyframes primary-short {
+    0% {
+        width: 15%;
+    }
+
+    50% {
+        width: 90%;
+    }
+
+    100% {
+        width: 10%;
+    }
+}
+
+@keyframes primary-long {
+    0% {
+        width: 80%;
+    }
+
+    50% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
